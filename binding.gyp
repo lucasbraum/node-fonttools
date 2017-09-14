@@ -3,6 +3,9 @@
         {
             'target_name': 'fonttools',
             'sources': ['src/fonttools.cc'],
+            'include_dirs': [
+              '..',
+            ],
             'conditions': [
                 [
                     'OS=="mac"',
@@ -20,6 +23,20 @@
                                 '-Wint-conversions',
                                 '-Wmissing-field-initializers',
                                 '-Wno-c++11-extensions'
+                            ]
+                        }
+                    }
+                ],
+                [
+                    'OS=="linux"',
+                    {
+                        'link_settings': {
+                            'libraries': [
+                                '/usr/lib/python2.7/config/libpython2.7.so'
+                            ],
+                            'library_dirs': [
+                              '/usr/lib',
+                              '/usr/include/python2.7/'
                             ]
                         }
                     }
