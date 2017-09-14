@@ -1,6 +1,15 @@
 #include <node.h>
 #include <node_buffer.h>
-#include <Python/Python.h>
+
+#ifdef __linux__
+  #include <python2.7/Python.h>
+#elif __APPLE__
+  #include <Python/Python.h>
+#elif __WINDOWS__
+  #include <Python.h>
+#else
+  #error Operating system not supported
+#endif
 
 namespace fonttools {
   using v8::FunctionCallbackInfo;

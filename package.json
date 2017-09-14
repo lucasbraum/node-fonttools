@@ -1,8 +1,8 @@
 {
-  "name": "fonttools",
-  "version": "1.0.7",
+  "name": "fonttools-test",
+  "version": "0.0.1",
   "description": "Native bindings to `fonttools` to decompile and compile fonts.",
-  "repository": "https://github.com/dfrankland/node-fonttools.git",
+  "repository": "https://github.com/lucasbraum/node-fonttools",
   "author": "Dylan Frankland <dylan@frankland.io>",
   "license": "MIT",
   "main": "dist/index.js",
