@@ -1,5 +1,6 @@
 #include <node.h>
 #include <node_buffer.h>
+#include <iostream>
 
 #ifdef __linux__
   #include <python2.7/Python.h>
@@ -24,6 +25,7 @@ namespace fonttools {
   PyObject *TTFont;
 
   PyObject *ConvertNodeBufferToPythonBuffer(const FunctionCallbackInfo<Value>& args) {
+    std::cout << "log 1" << std::endl;
     PyObject *byteArray = PyByteArray_FromStringAndSize(node::Buffer::Data(args[0]), node::Buffer::Length(args[0]));
     PyObject *io = PyImport_ImportModule("io");
     PyObject *BytesIO = PyObject_GetAttrString(io, "BytesIO");
