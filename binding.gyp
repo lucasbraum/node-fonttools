@@ -32,13 +32,7 @@
                     {
                         'link_settings': {
                             'libraries': [
-                                '/usr/local/bin/python2.7'
-                            ],
-                            'library_dirs': [
-                              '/usr/lib',
-                              '/usr/lib/python2.7',
-                              '/usr/include/python2.7',
-                              '/usr/include/x86_64-linux-gnu/python2.7'
+                                '/usr/bin/python'
                             ]
                         }
                     }
