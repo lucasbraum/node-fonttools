@@ -32,6 +32,7 @@
                     {
                         'link_settings': {
                             'libraries': [
+                                'python2.7'
                             ],
                             'library_dirs': [
                               '/usr/lib',
