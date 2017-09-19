@@ -32,7 +32,6 @@
                     {
                         'link_settings': {
                             'libraries': [
-                                '/usr/lib/x86_64-linux-gnu/libpython2.7.so'
                             ],
                             'library_dirs': [
                               '/usr/lib',
