@@ -32,11 +32,13 @@
                     {
                         'link_settings': {
                             'libraries': [
-                                '/usr/lib/python2.7'
+                                '/usr/lib/python2.7/config/libpython2.7.so'
                             ],
                             'library_dirs': [
                               '/usr/lib',
-                              '/usr/include/python2.7'
+                              '/usr/lib/python2.7',
+                              '/usr/include/python2.7',
+                              '/usr/include/x86_64-linux-gnu/python2.7'
                             ]
                         }
                     }
