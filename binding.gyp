@@ -32,7 +32,7 @@
                     {
                         'link_settings': {
                             'libraries': [
-                                '<!(["python-config", "--prefix"])/python2.7'
+                                '/usr/lib/python2.7'
                             ],
                             'library_dirs': [
                               '/usr/lib',
